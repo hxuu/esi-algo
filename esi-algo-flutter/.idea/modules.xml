@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/esi_algo.iml" filepath="$PROJECT_DIR$/esi_algo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/esi_algo_android.iml" filepath="$PROJECT_DIR$/android/esi_algo_android.iml" />
+    </modules>
+  </component>
+</project>

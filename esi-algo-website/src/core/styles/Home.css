@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #131517;
+  background-image: url('../assets/bg-svg.svg');
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #131517; 
+  mix-blend-mode: multiply; 
+  z-index: -1;
+}
+
+@font-face {
+  font-family: "firaCode";
+  src: url("../../../public/FiraCode-VariableFont_wght.ttf");
+}
+
+
+code {
+	border-radius: 5px;
+	border-width: 1px;
+	font-family: sans-serif;
+	font-size: 0.75rem;
+	font-weight: 500;
+	line-height: 1rem;
+	padding: 0.125rem;
+	letter-spacing: 1px;
+	white-space: pre-wrap;
+	background-color: hsla(0, 0%, 100%, 0.07);
+	border-color: rgba(247, 250, 255, 0.12);
+	color: rgba(239, 241, 246, 0.75);
+}
+
+.example-card pre {
+	background-color: hsla(0, 0%, 100%, 0.1);
+	border-radius: 0.5rem;
+	color: rgba(239, 241, 246, 0.75);
+	font-size: 0.98rem;
+	line-height: 1.25rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	padding: 1rem;
+	white-space: pre-wrap;
+}
+.example-card pre strong {
+	color: white;
+	font-size: 1rem;
+}
+
+
+
+
+/* code editor */
+
+.cm-scroller,
+.cm-gutters {
+	background-color: #282a2c !important;
+}
+.cm-focused {
+	outline: none !important;
+}
+
+.split {
+	display: flex;
+	flex-direction: row;
+}
+
+.gutter {
+	background-color: #131517;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.gutter:hover {
+	background-color: #3279d0;
+}
+
+.gutter.gutter-horizontal {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==");
+	cursor: col-resize;
+}
+
+.gutter.gutter-vertical {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=");
+	cursor: row-resize;
+}
+
+
